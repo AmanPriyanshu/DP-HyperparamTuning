@@ -42,7 +42,6 @@ def run_evolutionary_optimization():
 	e = Experiment(get_model, criterion, train_dataset, test_dataset)
 	eo = EvolutionaryOptimization(e.run_experiment, calculate_reward, 10, search_space_nm=[0.5, 2.5], search_space_lr=[0.001, 0.05])
 	progress = eo.run()
-	print(progress)
 	return progress
 
 def run_reinforcement_learning_optimization():
@@ -50,15 +49,17 @@ def run_reinforcement_learning_optimization():
 	train_dataset, test_dataset = load_dataset()
 	e = Experiment(get_model, criterion, train_dataset, test_dataset)
 	rl = RLOptimization(e.run_experiment, calculate_reward, 10, search_space_nm=[0.5, 2.5], search_space_lr=[0.001, 0.05])
+	progress = rl.run()
+	return progress
 
 if __name__ == '__main__':
 	print("----------RUN SAMPLE-----------")
 	#run_sample()
 	print("----------RUN BAYESIAN---------")
-	#run_bayesian()
+	run_bayesian()
 	print("----------GRID SEARCH----------")
-	#run_grid_search()
+	run_grid_search()
 	print("---EVOLUTIONARY OPTIMIZATION---")
-	#run_evolutionary_optimization()
+	run_evolutionary_optimization()
 	print("-----REINFORCEMENT LEARNING----")
 	run_reinforcement_learning_optimization()
