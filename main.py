@@ -54,12 +54,12 @@ def run_reinforcement_learning_optimization():
 
 if __name__ == '__main__':
 	print("----------RUN SAMPLE-----------")
-	#run_sample()
-	print("----------RUN BAYESIAN---------")
+	run_sample()
+	print("\n\n----------RUN BAYESIAN---------")
 	run_bayesian()
-	print("----------GRID SEARCH----------")
+	print("\n\n----------GRID SEARCH----------")
 	run_grid_search()
-	print("---EVOLUTIONARY OPTIMIZATION---")
+	print("\n\n---EVOLUTIONARY OPTIMIZATION---")
 	run_evolutionary_optimization()
-	print("-----REINFORCEMENT LEARNING----")
+	print("\n\n-----REINFORCEMENT LEARNING----")
 	run_reinforcement_learning_optimization()
