@@ -68,6 +68,7 @@ class EvolutionaryOptimization:
 	def run(self):
 		prime_sample, best_half, chromosomes, performances = None, None, None, None
 		for generation_num in range(self.num_of_generations):
+			np.random.seed(generation_num)
 			self.generation_num = generation_num
 			if generation_num==0:
 				chromosomes = self.get_random_chromosomes(self.population_strength)

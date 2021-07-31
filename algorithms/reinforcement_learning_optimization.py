@@ -91,6 +91,7 @@ class RLOptimization:
 	def run(self):
 		n = self.experiments_per_episode
 		for index in range(self.number_of_episodes):
+			np.random.seed(index)
 			p = self.exploration_coeff[index]
 			n1 = int(n*p)
 			n2 = n-n1
