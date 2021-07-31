@@ -2,7 +2,7 @@ import torch
 import pandas as pd
 import numpy as np
 
-class DiabetesDataset(torch.utils.data.Dataset):
+class ClassificationDataset(torch.utils.data.Dataset):
 	def __init__(self, x, y):
 		self.x = x
 		self.y = y
@@ -14,11 +14,8 @@ class DiabetesDataset(torch.utils.data.Dataset):
 		return torch.from_numpy(self.x[idx].astype(np.float32)), torch.from_numpy(np.array([self.y[idx]]).astype(np.float32))
 
 def read_csv(path='diabetes.csv', val_split=0.2):
-	df = pd.read_csv(path)
-	features = list(df.columns)
-	df = df.values
-	x, y = df.T[:-1].T, df.T[-1]
-	train_x, train_y, test_x, test_y = x[:int((1-val_split)*len(x))], y[:int((1-val_split)*len(x))], x[int((1-val_split)*len(x)):], y[int((1-val_split)*len(x)):]
+	print("Please Create a Function as well as define its dataset class above.")
+	exit()
 	return train_x, train_y, test_x, test_y
 
 def load_dataset():
