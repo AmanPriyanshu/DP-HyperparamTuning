@@ -62,7 +62,7 @@ class EvolutionaryOptimization:
 		top_quarter = prime_sample + top_quarter
 		top_quarter = top_quarter/3
 		mutated_best_half = self.mutate(best_half)
-		new_chromosomes = np.concatenate((np.array([prime_sample]).T, top_quarter.T, mutated_best_half.T, self.get_random_chromosomes(len(top_quarter), return_numpy=True).T), axis=1)
+		new_chromosomes = np.concatenate((np.array([prime_sample]).T, top_quarter.T, mutated_best_half.T, self.get_random_chromosomes(self.population_strength - len(mutated_best_half) - len(top_quarter) - len(prime_sample), return_numpy=True).T), axis=1)
 		return new_chromosomes.T
 
 	def run(self):
