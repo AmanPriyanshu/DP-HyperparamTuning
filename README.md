@@ -13,11 +13,11 @@ A streamlined and basic implementation for all modules presented is available at
 ## Imports:
 
 ```python
-from RL_DP_Project.experiment.train_single_model import Experiment
-from RL_DP_Project.algorithms.bayesian_optimization import Bayesian
-from RL_DP_Project.algorithms.grid_search_algorithm import GridSearch
-from RL_DP_Project.algorithms.evolutionary_optimization import EvolutionaryOptimization
-from RL_DP_Project.algorithms.reinforcement_learning_optimization import RLOptimization
+from DP_HyperparamTuning.experiment.train_single_model import Experiment
+from DP_HyperparamTuning.algorithms.bayesian_optimization import Bayesian
+from DP_HyperparamTuning.algorithms.grid_search_algorithm import GridSearch
+from DP_HyperparamTuning.algorithms.evolutionary_optimization import EvolutionaryOptimization
+from DP_HyperparamTuning.algorithms.reinforcement_learning_optimization import RLOptimization
 ```
 
 ## Running Given Modules:
@@ -27,4 +27,9 @@ e = Experiment(get_model, criterion, train_dataset, test_dataset)
 b = Bayesian(e.run_experiment, calculate_reward, num_limit, search_space_nm=search_space_nm, search_space_lr=search_space_nm)
 ```
 
-Where, `get_model`, `calculate_reward` are functions and `criterion` is a `<class 'torch.nn.modules.loss.BCELoss'>`.
+Where, `get_model`, `calculate_reward` are functions, and `criterion` and `train_dataset, test_dataset` which are `<class 'torch.nn.modules.loss.BCELoss'>` and `torch.utils.data.Dataset` respectively.
+
+# Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change.
