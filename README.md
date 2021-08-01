@@ -6,6 +6,7 @@ A streamlined and basic implementation for all modules presented is available at
 
 * [GitHub Repo](https://github.com/AmanPriyanshu/DP-HyperparamTuning)
 * [GitHub Notebook](https://github.com/AmanPriyanshu/DP-HyperparamTuning/blob/main/RL_DP_Demo.ipynb)
+
 `Note:` [Colab Demo for the same](https://colab.research.google.com/github/AmanPriyanshu/DP-HyperparamTuning/blob/main/RL_DP_Demo.ipynb)
 
 # Implementation:
