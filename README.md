@@ -34,4 +34,4 @@ Where, `get_model`, `calculate_reward` are functions, and `criterion` and `train
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change. We also make
-available a [CONTRIBUTING.md](https://github.com/AmanPriyanshu/DP-HyperparamTuning/blob/main/CONTRIBUTING.md) for easy communication and quick issue resolution.
+available a [CONTRIBUTING.md](https://github.com/AmanPriyanshu/DP-HyperparamTuning/blob/main/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/AmanPriyanshu/DP-HyperparamTuning/blob/main/CODE_OF_CONDUCT.md) for easy communication and quick issue resolution.
