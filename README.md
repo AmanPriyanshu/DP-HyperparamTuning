@@ -33,4 +33,5 @@ Where, `get_model`, `calculate_reward` are functions, and `criterion` and `train
 # Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change.
+email, or any other method with the owners of this repository before making a change. We also make
+available a [CONTRIBUTING.md](https://github.com/AmanPriyanshu/DP-HyperparamTuning/blob/main/CONTRIBUTING.md) for easy communication and quick issue resolution.
