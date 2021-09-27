@@ -1,6 +1,6 @@
 # DP-HyperparamTuning
 
-The offical repository for all algorithms and code for the [Efficient Hyperparameter Optimization for Differentially Private Deep Learning](https://arxiv.org/abs/2108.03888).
+The offical repository for all algorithms and code for the [Efficient Hyperparameter Optimization for Differentially Private Deep Learning](https://arxiv.org/abs/2108.03888) accepted at [PPML Workshop @ ACM-CCS'2021](https://ppml-workshop.github.io/).
 
 A streamlined and basic implementation for all modules presented is available at:
 
